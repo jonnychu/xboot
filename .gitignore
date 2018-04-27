@@ -1,0 +1,8 @@
+target
+.settings
+.classpath
+.project
+/xboot-batch/
+/xboot-common/
+/xboot-core/
+/xboot-startup/
