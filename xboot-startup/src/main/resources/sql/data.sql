@@ -1,0 +1,3 @@
+INSERT INTO USER(USERNAME,PASSWORD,EMAIL) VALUES('evan','lucky123456','jdjhqk@sina.com');
+INSERT INTO USER(USERNAME,PASSWORD,EMAIL) VALUES('jonny','lucky123456','jdjhqk@sina.com');
+INSERT INTO USER(USERNAME,PASSWORD,EMAIL) VALUES('sandy','lucky123456','jdjhqk@sina.com');
