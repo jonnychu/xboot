@@ -18,7 +18,6 @@ public class BatchStartup {
 	
 	/**
 	 * Main 
-	 * @throws InterruptedException 
 	 */
 	public static void main(String[] args) throws InterruptedException {
 		SpringApplication app = new SpringApplication(CLAZZ);
