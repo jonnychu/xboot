@@ -17,14 +17,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>cn.nextop</groupId>
-			<artifactId>xboot-core</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>cn.nextop</groupId>
 			<artifactId>xboot-batch</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
-	
 </project>

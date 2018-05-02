@@ -18,5 +18,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-batch</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>cn.nextop</groupId>
+			<artifactId>xboot-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 </project>

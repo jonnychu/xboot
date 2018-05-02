@@ -13,10 +13,10 @@ import cn.nextop.core.common.orm.po.User;
 @Mapper
 public interface UserDao {
 	
-	@Insert("INSERT INTO USER(USERNAME,PASSWORD,EMAIL) VALUES(#{userName}, #{password}, #{email})")
+	@Insert("INSERT INTO PUBLIC.USER(USERNAME,PASSWORD,EMAIL) VALUES(#{userName}, #{password}, #{email})")
     void insert(User user);
 	
-	@Select("SELECT * FROM USER")
+	@Select("SELECT * FROM PUBLIC.USER")
     @Results({
         @Result(property = "userName",  column = "USERNAME"),
         @Result(property = "password", column = "PASSWORD"),
