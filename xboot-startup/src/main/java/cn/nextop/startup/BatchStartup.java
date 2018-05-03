@@ -5,6 +5,7 @@ import java.util.HashSet;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import cn.nextop.batch.BatchConfiguration;
@@ -21,6 +22,7 @@ public class BatchStartup {
 	 */
 	public static void main(String[] args) throws InterruptedException {
 		SpringApplication app = new SpringApplication(CLAZZ);
-		app.setSources(new HashSet<>(Arrays.asList(CONFIGS))); app.run(args);
+		app.setSources(new HashSet<>(Arrays.asList(CONFIGS)));
+		app.setWebApplicationType(WebApplicationType.NONE); app.run(args);
 	}
 }
