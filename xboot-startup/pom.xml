@@ -20,6 +20,11 @@
 			<artifactId>xboot-batch</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>cn.nextop</groupId>
+			<artifactId>xboot-webservice</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 	
 	<!-- 

@@ -15,6 +15,7 @@
 		<module>xboot-batch</module>
 		<module>xboot-common</module>
 		<module>xboot-startup</module>
+		<module>xboot-webservice</module>
 	</modules>
 
 	<properties>

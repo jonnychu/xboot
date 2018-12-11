@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:websocket="http://www.springframework.org/schema/websocket"
+    xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                        http://www.springframework.org/schema/websocket http://www.springframework.org/schema/websocket/spring-websocket.xsd">
+    
+    <!--  -->
+    <bean id="jetty.server" class="org.eclipse.jetty.server.Server">
+        <property name="stopAtShutdown" value="true"/>
+        <property name="dumpAfterStart" value="false"/>
+        <property name="dumpBeforeStop" value="false"/>
+        <property name="connectors" ref="jetty.connectors"/>
+        <property name="sessionIdManager" ref="jetty.session.id.manager"/>
+        <constructor-arg index="0">
+            <bean class="org.eclipse.jetty.util.thread">
+                <property name="minThreads" value="8"/>
+                <constructor-arg index="0" value="jetty.server.pool"/>
+                <property name="maxThreads" value="${web.admin.jetty.pool.shards}"/>
+                <property name="idleTimeout" value="${web.admin.jetty.pool.timeout:600000}"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+</beans>
